@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>Pomodoro Timer</h1>
+  <div class="input-group">
+    <label for="sessionTime">Timer:</label>
+    <input id="sessionTime" type="number" value="25">
+    <button onclick="applyChanges()">Apply</button>
+  </div>
+  <div class="input-group">
+    <label for="breakTime">Break:</label>
+    <input id="breakTime" type="number" value="5">
+    <button onclick="applyChanges()">Apply</button>
+  </div>
+  <div id="timer">25:00</div>
+  <div class="button-group">
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+  <div id="alert" class="alert">Time for your break</div>
+</body>
+<script src="script.js"></script>
+
+</html>
