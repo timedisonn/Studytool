@@ -6,6 +6,7 @@
 </head>
 
 <body>
+  <div id="timer">25:00</div>
   <h1>Pomodoro Timer</h1>
   <div class="input-group">
     <label for="sessionTime">Timer:</label>
@@ -17,13 +18,22 @@
     <input id="breakTime" type="number" value="5">
     <button onclick="applyChanges()">Apply</button>
   </div>
-  <div id="timer">25:00</div>
   <div class="button-group">
     <button onclick="startTimer()">Start</button>
     <button onclick="stopTimer()">Stop</button>
     <button onclick="resetTimer()">Reset</button>
   </div>
-  <div id="alert" class="alert">Time for your break</div>
+  <button id="helpButton">Help</button>
+  <div id="helpPopup" class="popup">
+    <div class="popup-content">
+      <span id="closeButton">&times;</span>
+      <p style="color: #000;">This is a Pomodoro timer. You can set the timer and break durations and start, stop, or
+        reset the timer. The
+        default cycle is 25 minutes of work, followed by a 5-minute break. After 4 cycles, there is a longer, 30-minute
+        break.</p>
+    </div>
+  </div>
+  <a href="https://www.timothyedison.pro" class="homepage-link">Back to Homepage</a>
 </body>
 <script src="script.js"></script>
 

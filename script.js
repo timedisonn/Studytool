@@ -71,3 +71,21 @@ if (timeLeft <= 0) {
     timeLeft = document.getElementById('sessionTime').value * 60;
   }
 }
+
+var helpButton = document.getElementById('helpButton');
+var popup = document.getElementById('helpPopup');
+var closeButton = document.getElementById('closeButton');
+
+helpButton.onclick = function() {
+    popup.style.display = 'block';
+}
+
+closeButton.onclick = function() {
+    popup.style.display = 'none';
+}
+
+window.onclick = function(event) {
+    if (event.target == popup) {
+        popup.style.display = 'none';
+    }
+}

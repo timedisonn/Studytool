@@ -34,9 +34,12 @@ label {
 }
 
 #timer {
-  font-size: 60px;
+  font-size: 100px;
+  /* increased size */
   color: #ffffff;
   /* white */
+  font-weight: bold;
+  /* make it bold */
 }
 
 button {
@@ -75,16 +78,44 @@ input {
   /* adjust this value as needed */
 }
 
-.alert {
+.popup {
   display: none;
   position: fixed;
-  top: 0;
+  z-index: 1;
   left: 0;
+  top: 0;
   width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
   padding: 20px;
-  text-align: center;
-  background-color: #39a59c;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.homepage-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   color: #ffffff;
-  font-size: 30px;
-  z-index: 1000;
+  text-decoration: none;
 }
