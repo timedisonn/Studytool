@@ -12,6 +12,9 @@ body {
   color: #ffffff;
   /* white */
   text-align: center;
+  padding: 20px;
+  overflow: hidden;
+  /* added padding */
 }
 
 h1,
@@ -42,7 +45,8 @@ label {
   /* make it bold */
 }
 
-button {
+button,
+input {
   background-color: #ffffff;
   /* white */
   border: none;
@@ -78,6 +82,18 @@ input {
   /* adjust this value as needed */
 }
 
+.homepage-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  /* added border */
+  padding: 10px;
+  /* added padding */
+}
+
 .popup {
   display: none;
   position: fixed;
@@ -99,23 +115,10 @@ input {
 }
 
 .close {
-  color: #aaaa;
+  color: #000;
+  /* changed color to black */
   float: right;
   font-size: 28px;
   font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
   cursor: pointer;
-}
-
-.homepage-link {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  color: #ffffff;
-  text-decoration: none;
 }

@@ -33,11 +33,7 @@ function stopTimer() {
 }
 
 function resetTimer() {
-  stopTimer();
-  isBreak = false;
-  sessionCount = 0;
-  timeLeft = document.getElementById('sessionTime').value * 60;
-  document.getElementById('timer').textContent = timeLeft / 60 + ':00';
+  location.reload(); // Reload the page
 }
 
 function applyChanges() {
@@ -77,15 +73,15 @@ var popup = document.getElementById('helpPopup');
 var closeButton = document.getElementById('closeButton');
 
 helpButton.onclick = function() {
-    popup.style.display = 'block';
+  popup.style.display = 'block';
 }
 
 closeButton.onclick = function() {
-    popup.style.display = 'none';
+  popup.style.display = 'none';
 }
 
 window.onclick = function(event) {
-    if (event.target == popup) {
-        popup.style.display = 'none';
-    }
+  if (event.target == popup) {
+    popup.style.display = 'none';
+  }
 }
