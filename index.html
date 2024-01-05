@@ -6,24 +6,36 @@
 </head>
 
 <body>
-  <h1>Pomodoro Timer</h1>
+  <div id="timer">25:00</div>
+  <h1>Tim's Pomodoro Timer</h1>
   <div class="input-group">
-    <label for="sessionTime">Timer:</label>
+    <label for="sessionTime">Adjust Timer:</label>
     <input id="sessionTime" type="number" value="25">
     <button onclick="applyChanges()">Apply</button>
   </div>
   <div class="input-group">
-    <label for="breakTime">Break:</label>
+    <label for="breakTime">Adjust Break:</label>
     <input id="breakTime" type="number" value="5">
     <button onclick="applyChanges()">Apply</button>
   </div>
-  <div id="timer">25:00</div>
   <div class="button-group">
     <button onclick="startTimer()">Start</button>
     <button onclick="stopTimer()">Stop</button>
     <button onclick="resetTimer()">Reset</button>
   </div>
-  <div id="alert" class="alert">Time for your break</div>
+  <button id="helpButton">Help</button>
+  <div id="helpPopup" class="popup">
+    <div class="popup-content">
+      <button id="closeButton" class="close-button">Close</button>
+      <p style="color: #000;">Hi! Welcome to Tim's Pomodoro Timer. The Pomodoro Technique is an attention remedy for
+        perfectionists and procrastinators of all kinds. Work in focused intervals. Take a break. Repeat. You can set
+        the timer and break durations and start, stop, or reset the timer. The default cycle is 25 minutes of work,
+        followed by a 5-minute break. After 4 cycles, there is
+        a longer, 30-minute break. Good luck!</p>
+    </div>
+  </div>
+  <a href="https://www.timothyedison.pro" class="homepage-link">Back to Homepage</a>
+  <div id="alert" class="alert">Time for your break</div> 
 </body>
 <script src="script.js"></script>
 
